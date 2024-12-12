@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="icon" href="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Balloons_PNG_Image-771009156.png?m=1541639344" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .tombol{
+        width: 120px;
+        padding: 12px;
+        border-radius: 5px;
+        border: none;
+        background-color: yellow;
+        color: orangered;
+        font-size: 16px;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="card" onclick="play()">
+      <div class="confetti" onclick="play()">
+        <div class="squareOne"></div>
+        <div class="squareTwo"></div>
+        <div class="squareThree"></div>
+        <div class="squareFour"></div>
+        <div class="squareFive"></div>
+        <div class="squareSix"></div>
+        <div class="squareSeven"></div>
+        <div class="squareEight"></div>
+        <div class="squareNine"></div>
+        <div class="squareTen"></div>
+      </div>
+      <h1>Happy Birthday!</h1>
+      <img src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Balloons-PNG/Balloons_PNG_Image-771009156.png?m=1541639344" alt="baloons"/>
+      <input type="image" id="icon" onclick="play()" src="play.png"/>
+      <audio id="audio" src="song.mp3"></audio>
+      
+    </div>
+    <a href="ucapan/index.html"><button  class="tombol">surprise??</button></a>
+    
+   
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        if (audio.muted) {
+          audio.muted = false; // unmute audio on click
+        } else {
+          audio.play(); // play audio on click (already unmuted)
+        }
+      }
+      
+    </script>
+  </body>
+</html>
